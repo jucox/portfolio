@@ -11,4 +11,9 @@ body {
 .content {
     text-align: center;
     justify-content: center;
+    background-color: rgb(159, 143, 189);
+    width: 50%;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
