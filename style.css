@@ -16,6 +16,11 @@ body {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .presentation {
     display: flex;
     flex-direction: row;
@@ -40,8 +45,33 @@ body {
     letter-spacing: 9px;
 }
 
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.social-medias div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-size: 25px;
+    padding: 0 10px;
+    margin: 5px;
+}
+
+.social-medias div:hover {
+    cursor: pointer;
+    /* border: 2px solid #FFF;
+    border-radius: 20px; */
+}
+
 @media screen and (max-width: 960px) {
-    .presentation {
+    .container {
         display: flex;
         flex-direction: column;
     }
