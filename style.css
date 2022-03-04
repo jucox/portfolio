@@ -20,10 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 5px solid #FFF;
-    border-radius: 10px;
-    width: 700px;
-    padding: 30px; */
+    padding-top: 50px;
 }
 
 .presentation {
@@ -110,29 +107,42 @@ body {
 }
 
 hr {
-    width: 100%;
+    width: 70%;
     margin-top: 40px;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 50px auto;
+    width: 100%;
+}
+
+.projects-section h2 {
+    color: #FFF;
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 50px;
 }
-
-.projects h2 {
-    color: #FFF;
-    font-size: 25px;
-}
-
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
 }
 
 .project h3 {
@@ -149,11 +159,14 @@ hr {
 
 .project img {
     width: 500px;
-    border: 5px solid #FFF;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: 3px 3px 10px rgb(126, 126, 126);
 }
 
+.project a {
+    color: #FFF;
+}
 
 @media screen and (max-width: 700px) {
     .presentation {
@@ -168,5 +181,9 @@ hr {
 
     .name h3 {
         font-size: 13.5px;
+    }
+
+    .project img {
+        width: 300px;
     }
 }
