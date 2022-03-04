@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -19,13 +19,18 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* border: 5px solid #FFF;
+    border-radius: 10px;
+    width: 700px;
+    padding: 30px; */
 }
 
 .presentation {
     display: flex;
     flex-direction: row;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
 }
 
 .presentation img {
@@ -49,10 +54,26 @@ body {
 .name h3 {
     color: #FFF;
     font-weight: 400;
-    letter-spacing: 8.75px;
+    letter-spacing: 9.75px;
     text-align: center;
-    margin-left: 12px;
+    margin-left: 11px;
+    font-size: 17px;
 }
+
+/* .about {
+    color: #FFF;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about code {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    color:#F72585;
+    background-color: #023047;
+    border-radius: 5px;
+    padding: 5px 10px;
+} */
 
 .social-medias {
     display: flex;
@@ -88,9 +109,64 @@ body {
     border: 2px solid #FFF;
 }
 
-@media screen and (max-width: 960px) {
+hr {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.projects h2 {
+    color: #FFF;
+    font-size: 25px;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.project h3 {
+    color: #FFF;
+}
+
+.project p {
+    color: #FFF;
+}
+
+.project p strong {
+    font-weight: 600;
+}
+
+.project img {
+    width: 500px;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
     .presentation {
         display: flex;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .name h1 {
+        font-size: 45px;
+    }
+
+    .name h3 {
+        font-size: 13.5px;
     }
 }
