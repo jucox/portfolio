@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    Background: linear-gradient(120deg, #7209b7 0%, #4cc9f0 100%);
+    Background: linear-gradient(120deg, #7209b7 0%, #4CC9F0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,8 +67,8 @@ body {
 .about code {
     font-family: 'Courier Prime', monospace;
     font-weight: 700;
-    color:#F72585;
-    background-color: #023047;
+    color:#7209b7;
+    background-color: #FFF;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -169,7 +169,6 @@ hr {
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 3px 3px 10px rgb(126, 126, 126);
 }
 
 .project a {
@@ -182,6 +181,7 @@ hr {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 400px) {
     .name h1 {
         font-size: 45px;
