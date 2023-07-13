@@ -157,8 +157,9 @@ hr {
 
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
     align-items: center;
     gap: 50px;
 }
